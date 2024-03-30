@@ -47,6 +47,30 @@ more or less optimal solution.
     \includegraphics[width=\textwidth]{raid-overview}
 \end{figure}
 
+\section{Reliability}
+\begin{equation}
+    \label{eq:r5-mtbw}
+    \frac{MTTF^2(disk)}{N*(G-1)*MTTR(disk)}
+\end{equation}
+Equation \ref{eq:r5-mtbw} give a way to calculate the mean time to failure.
+Where \(MTTF(disk)\) is the mean time of failure of a single disk
+\(N\) is the number of disks and G is the size of the arrays.
+The equation assumes no correlated failures, that means that
+this simple model assume all disks are independent.
+
+
+The same calculation looks slightly different for RAID-6:
+\begin{equation}
+    \frac
+    {MTTF^3(disk)}
+    {N*(G-1)*(G-2)*MTTR^2(disk)}
+\end{equation}
+
+\begin{equation}
+    \label{eq:r6-mtbw}
+    \frac{MTTF(disk)^2}{N*(G-1)*MTTR(disk)}
+\end{equation}
+
 \section{Cost}
 Cost can be compared using the matrix shown in Table \ref{tab:economics}.
 It is feasable to compare the cost point relative to RAID level-0, since it
