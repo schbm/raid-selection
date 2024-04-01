@@ -1,15 +1,17 @@
 # Fdb version 4
-["bibtex main"] 1711834841.17901 "main.aux" "main.bbl" "main" 1711835175.96753 0
-  "./refs.bib" 1711800909 271 799b4dc98c7f5424f1b115fc545e5dc0 ""
+["bibtex main"] 1711981584.95707 "main.aux" "main.bbl" "main" 1711981587.58074 0
+  "./refs.bib" 1711980263 603 4f5502896e08819d33e0664624670496 ""
   "C:/Users/mrcls/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/ieeetr.bst" 1291864344 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "main.aux" 1711835174 1137 1b35985fbdc0fc662cb9618041ca9aef "pdflatex"
+  "main.aux" 1711981586 3595 2bc3eb601d89351f9a21003839e713df "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1711835173.72635 "c:/Users/mrcls/Documents/documentation/raid-selection/main.tex" "main.pdf" "main" 1711835175.96906 0
+["pdflatex"] 1711981585.37229 "c:/Users/mrcls/Documents/documentation/raid-selection/main.tex" "main.pdf" "main" 1711981587.58159 0
   "C:/Users/mrcls/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1711097084 81074 e9df683c7a67b773afe1722d345afa16 ""
+  "C:/Users/mrcls/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1711981395 11548 4c0813ff4f0f6ee34745c62c1d23f321 ""
   "C:/Users/mrcls/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1710434067 24233103 c9c9804dba5e38b0aebb8d3fe787b110 ""
+  "C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
   "C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -47,13 +49,21 @@
   "C:/Users/mrcls/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1708427688 30006 3d512c0edd558928ddea1690180ef77e ""
   "C:/Users/mrcls/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1700599895 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
   "C:/Users/mrcls/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1700599895 7147 d45559f8a31b8c53ada0640516660003 ""
-  "c:/Users/mrcls/Documents/documentation/raid-selection/main.tex" 1711835172 4056 e1715ae40a23dbc23b7c7680476672a3 ""
+  "c:/Users/mrcls/Documents/documentation/raid-selection/main.tex" 1711981581 12229 a1b631753ab2561b4cb9f52e37314b3b ""
+  "img/cost-troughput-comparison.png" 1711836725 158191 e0c9d1b7187296e3c4dd4eebbb054ec0 ""
+  "img/hp-storage-efficiency.png" 1711979832 72982 4bde29548ee93fe0b0b200d07e775343 ""
   "img/raid-overview.png" 1711800909 120497 fe9b3025b3d279e3bdb38ae9098206d0 ""
-  "main.aux" 1711835174 1137 1b35985fbdc0fc662cb9618041ca9aef "pdflatex"
-  "main.bbl" 1711834841 246 ad9f0fc4d811103eceb802e202b794a8 "bibtex main"
-  "main.tex" 1711835172 4056 e1715ae40a23dbc23b7c7680476672a3 ""
+  "main.aux" 1711981586 3595 2bc3eb601d89351f9a21003839e713df "pdflatex"
+  "main.bbl" 1711981585 453 ac1ee10f745557531e2f8dce0aec2620 "bibtex main"
+  "main.lof" 1711981586 297 942a2af7b17a9debb7e98fab53585c39 "pdflatex"
+  "main.lot" 1711981586 728 b819ebcb0a820831cb76d0772bb2663f "pdflatex"
+  "main.tex" 1711981581 12229 a1b631753ab2561b4cb9f52e37314b3b ""
+  "main.toc" 1711981586 485 57ac3f28c92e3b2da927fbfc94422671 "pdflatex"
   (generated)
   "main.aux"
+  "main.lof"
   "main.log"
+  "main.lot"
   "main.pdf"
+  "main.toc"
   (rewritten before read)

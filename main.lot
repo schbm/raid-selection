@@ -1,0 +1,4 @@
+\contentsline {table}{\numberline {1}{\ignorespaces Amount of drives able to fail without array service degradation \cite {uw:raid}}}{3}{}%
+\contentsline {table}{\numberline {2}{\ignorespaces Coefficient of the space multiplication (smallest disk). \cite {uw:raid} The calculation of RAID-2 was derived from Chen et al., Alagappan and wikipedia. \cite {cmu:raidhighperf}\cite {uw:raid}}}{4}{}%
+\contentsline {table}{\numberline {3}{\ignorespaces Cost Throughput Comparison relative to RAID-0 \cite {cmu:raidhighperf}}}{5}{}%
+\contentsline {table}{\numberline {4}{\ignorespaces Performance Calculation \cite {uw:raid}, The original talbe does not include RAID-6 so it was derived from Chen et al \cite {cmu:raidhighperf}}}{7}{}%
