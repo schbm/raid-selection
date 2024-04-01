@@ -17,44 +17,18 @@
 Choosing the right configuration for the logical disks
 of your systems is no trivial task. But it is still one, many technicians are faced with. 
 \\ \\
-The goal of this report is to present pragmatic aproaches on
-how to choose the right configuration for the specific task at hand. 
-It does not include explanations on the underlying technical details.
-It also does only apply a narrow view, and does not consider 
-other factors like access protocols or optimized implementations.
-But still the information can be used to calculate and compare theoretical values
-to achieve more informed decisions or to do further research.
+The aim of this report is to offer practical approaches for selecting the appropriate configuration for a specific task, without delving into the underlying technical intricacies. It adopts a narrow perspective, focusing solely on factors such as reliability, capacity, cost, and performance, while disregarding considerations like access protocols or optimized implementations. Nevertheless, the provided information can serve as a foundation for calculating and comparing theoretical values, empowering readers to make more informed decisions or conduct additional research.
 \\ \\
-The methology used is simply the analysis of available information online.
-Since this is not very scientific, most information was
-not checked beyond plain plausibility. Also note that i did not 
-make any quantifiable empirical measurements.
+The methodology employed in this report is primarily based on the analysis of readily available information online. Due to the non-scientific nature of this approach, most of the information was not verified beyond basic plausibility checks. It's important to note that no quantifiable empirical measurements were conducted as part of this study.
 \\ \\
-The report is divided into 5 main parts.
-In the first 4, relevant information is shown
-on how to compare reliability, capacity, cost and performance.
-In the last section guide, a simple overarching method is presented
-and this chapter also container further vendor specific information.
-lastly 
-
-
+The report is structured into five main parts. The first four sections provide essential information on comparing reliability, capacity, cost, and performance. In the final section guide, a straightforward overarching method is presented, along with additional vendor-specific information contained within this chapter.
 \pagebreak
 \tableofcontents
 \pagebreak
-
 \section{Reliability}
-Since reallife situation depend on many
-variables simple numeric methods are not really conlusive.
-But consider the average failure time of one drive and then replicate it among
-a storage group, the probability of a drive failing will obviously increase drastically
-with higher numbers of drives. Analitically this change is hard to define,
-since it depents on many factors. For example: it is very common,
-that drives coming from the same batch of production might fail togheter
-in short succession, factors like these are hard to determine. \cite{cmu:raidhighperf}
-
-
-Still, if one wants to get a simple overview further i
-will include formulas for the failure calculation for RAID-5
+Due to the complexity of real-life situations, simple numeric methods may not provide conclusive results. For instance, when considering the average failure time of a single drive and then extrapolating it across a storage group, the probability of a drive failing will evidently increase significantly with a higher number of drives. Analytically defining this change is challenging due to its dependency on various factors. For example, it's frequently observed that drives from the same production batch may fail together in short succession, making it difficult to determine such factors definitively. \cite{cmu:raidhighperf}
+\\ \\
+Still, if one wants to get a simple overview, formulas are included for the failure calculation for RAID-5
 and RAID-6.
 \begin{equation}
     \label{eq:r5-mttf}
@@ -74,10 +48,7 @@ in eqation \ref{eq:r6-mttf}. \cite{cmu:raidhighperf}
     {MTTF^3(disk)}
     {N*(G-1)*(G-2)*MTTR^2(disk)}
 \end{equation}
-A overview of the amount of hardware that can fail without disrupting service can be seen in table \ref{tab:reliability}.
-Notice, that in RAID-1 it also very much depends on luck where the failure happens, since if the stripes are 
-favourably replicated multiple drives might be able to fail. \cite{uw:raid} 
-
+An overview of the hardware failures that can occur without disrupting service is presented in Table \ref{tab:reliability}. It's worth noting that in RAID-1, the impact of a failure largely depends on luck regarding the location of the failure. If the stripes are favorably replicated, multiple drives may be able to fail without service disruption. \cite{uw:raid} 
 \begin{table}[h]
     \begin{tabularx}{\textwidth}{l|X|X|X|X|X|X}
         \textbf{Level} &
@@ -117,14 +88,14 @@ A comparative capacity calculation can relatively easily be done using table \re
 \pagebreak
 
 \section{Cost}
-An economic comparison can be created using the matrix shown in table \ref{tab:economics}.
-It is feasable to compare the cost point relative to RAID level-0, since it
-is the configuration with the lowest cost/efficiency rating.
-To compare the different options use \( N = \textnormal{ Number of disks}\)
-and with \(\max\left(x,y\right)\) is the known max function with \( x, y \in R \).
-Small here refers to I/O requests of one striping unit, large refers to I/O requests of one full stripe (one stripe unit from each disk in an error-
-correction group). A general overview can be seen in figure \ref{fig:costthroughput} which 
-plots this againts arrays of different sizes. \cite{cmu:raidhighperf}
+An economic comparison can be facilitated using the matrix illustrated in Table \ref{tab:economics}.
+t's practical to assess the cost relative to RAID level-0, as it represents the configuration with the 
+lowest cost/efficiency rating. To compare the various options, utilize \( N = \textnormal{ Number of disks}\)
+and \(\max\left(x,y\right)\) as the known max function with \( x, y \in R \).
+In this calculation, "small" denotes I/O requests of one striping unit, while "large" 
+denotes I/O requests of one full stripe (one stripe unit from each disk in an error-correction group). 
+The overview can be seen in figure \ref{fig:costthroughput} which 
+plots this against arrays of different sizes. \cite{cmu:raidhighperf}
 \begin{table}[h]
     \begin{tabularx}{\textwidth}{l|X|X|X|X|X}
         \textbf{Level} &
@@ -151,22 +122,20 @@ plots this againts arrays of different sizes. \cite{cmu:raidhighperf}
 \end{figure}
 \pagebreak
 \section{Performance}
-You can approximate theoretical upper bound of the performance by using table \ref{tab:perf}.
-The calculation only take conceptual first order factors into account.
-But despite this, it may still be benefitial to compare these fundamental boundaries
-to get a general overview. The table offers the coefficients which
-can be multiplied with the given drive metrics (random read, random write, seq read, seq write).
-Notice, that this does not use specific block sizes, it can be applied on
-average or median values. \cite{uw:raid}
+You can approximate the theoretical upper bound of performance using Table \ref{tab:perf}. 
+The calculation considers only conceptual first-order factors. Despite this limitation, 
+comparing these fundamental boundaries can still be beneficial for outlining performance expectations. 
+The table provides coefficients that can be multiplied by the given drive metrics 
+(random read, random write, sequential read, sequential write). 
+It's important to note that this approach does not specify block sizes and
+can be applied to average or median values. \cite{uw:raid}
 \subsection{Nested RAID Configuraitions}
-For nested RAID configuration, calculate the values of a single group first and
-then iterate the calculation. Evenly distrubute the group size across
-the total amount of disks.
-For example: calculate the table then take
-the values of the RAID-5 configuration an plug it into the table again.
-Consider that this does not include many optimizations typically implemented
-on plattforms.
-Again keep in mind, that this is a rough approximation.
+For nested RAID configurations, begin by calculating the values for a single group, and then iterate the calculation. Distribute the group size evenly across the total number of disks.
+
+For instance, calculate the table for a single RAID-5 group first,
+and then take those values and plug them back into the table again.
+It's important to note that this approach does not include many optimizations typically implemented on platforms.
+Again keep in mind, that this is only an approximation.
 \begin{table}[h]
     \begin{tabularx}{\textwidth}{l|X|X|X|X|X|X}
         \textbf{Level} &
@@ -186,29 +155,36 @@ Again keep in mind, that this is a rough approximation.
     \caption{Performance Calculation \cite{uw:raid}, The original talbe does not include RAID-6 so it was derived from Chen et al \cite{cmu:raidhighperf}}
     \label{tab:perf}
 \end{table}
-
-Notice, that with increasing number of disks
-the upper bound of the throughput can be enhanced,
+Also notice, that with increasing number of disks
+the upper bound of the throughput can be amplified,
 but generaly latency is not improved.
 \subsection{Other Factors}
-Always read the specific hardware as well as software manuals and documents since
-theoratical speeds very much depend on the specific implementations.
-Factors like controller, algorithm and cache optimization play a important role.
-In the most general case, we just assume that they scale with a constant value.
+It's crucial to always refer to specific hardware and software documentation,
+as theoretical speeds heavily rely on particular implementations.
+Factors such as controller features, choice of algorithms,
+and caching mechanisms play an immense role in determining actual performance.
+In the most general case, we assume that these factors scale with a constant value.
+
+Additionally, it's important to consider other variables that can impact performance,
+such as network latency, system workload, and environmental conditions.
+By thoroughly understanding the specific characteristics of the hardware and software being used,
+one can better optimize configurations and make more accurate performance assessments.
+Furthermore, staying informed about updates and advancements in technology
+can help ensure that systems are operating at their highest potential.
 \pagebreak
 \section{Guide}
 For a fast comparison use the Microsoft Excel workbook "raid-workbook.xlsx"
-supplied with this report. Plug in the dependable variables like drive size
+supplied with this report. Plug in the dependant variables like drive size
 and io speeds and further analyze the results.
 \subsection{HPE Smart Array}
 HP offers different storage solutions, one of
 these consists of the Smart Array Controllers,
 which offer different functionalities separated by classes.
-In this chapter i want to give the reader an overview and present,
+In this chapter an overview is given and it is presented,
 what HP writes about the topics reliability, performance and efficiency.
 \\ \\
 There are three main classes: S,E and P.
-S-Class provides a typical software RAID for MS Windows
+S-Class provides a typical software RAID solution for MS Windows
 environments and is an entry level product.
 Next in line is the E-Class physical controllers
 which offer enterprise level functionalities but
@@ -226,11 +202,11 @@ In their documentations they almost show the same
 theoretical numbers to create a performance comparison.
 They simplify their model on the basis of needed write io operations.
 \begin{itemize}
-    \item RAID-0, 1
-    \item RAID-1/10, 2
-    \item RAID-1/10 Triple, 3
-    \item RAID-5, 4
-    \item RAID-6, 6
+    \item RAID-0, 1x Steps IO 
+    \item RAID-1/10, 2x Steps IO
+    \item RAID-1/10 Triple, 3x Steps IO
+    \item RAID-5, 4x Steps IO
+    \item RAID-6, 6x Steps IO
 \end{itemize}
 This has evidently a big enough similiarity to the model used in chapter "Performance".
 \\ \\
@@ -256,9 +232,10 @@ At last consider following suggestions by HP:
 \end{itemize}
 
 \section*{Fun Facts}
-It appears to be, that RAID was an abreviation for "Redundant Array of Inexpensive Disks" befoire beeing
-modified to the more known version of: "Redundant Array of Independent Disks"
-Source is: trust me brother, cannot be bothered to look it up.
+
+It seems that RAID initially stood for "Redundant Array of Inexpensive Disks"
+before evolving into the more widely recognized version, "Redundant Array of Independent Disks."
+Source is: trust me brother; cannot be bothered to look it up.
 \listoffigures
 \listoftables
 \bibliographystyle{ieeetr}
