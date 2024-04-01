@@ -173,34 +173,27 @@ Furthermore, staying informed about updates and advancements in technology
 can help ensure that systems are operating at their highest potential.
 \pagebreak
 \section{Guide}
-For a fast comparison use the Microsoft Excel workbook "raid-workbook.xlsx"
-supplied with this report. Plug in the dependant variables like drive size
-and io speeds and further analyze the results.
+For a quick comparison, utilize the Microsoft Excel 
+workbook "raid-workbook.xlsx" provided with this report.
+Input the dependent variables such as drive size and IO speeds, 
+then delve deeper into analyzing the results. \cite{mas:workbook}
 \subsection{HPE Smart Array}
-HP offers different storage solutions, one of
-these consists of the Smart Array Controllers,
-which offer different functionalities separated by classes.
-In this chapter an overview is given and it is presented,
-what HP writes about the topics reliability, performance and efficiency.
+HP provides various storage solutions, one of which includes the Smart Array Controllers,
+offering distinct functionalities categorized into classes.
+This section provides an overview and presents HP's insights on reliability, performance, and efficiency regarding these controllers.
 \\ \\
-There are three main classes: S,E and P.
-S-Class provides a typical software RAID solution for MS Windows
-environments and is an entry level product.
-Next in line is the E-Class physical controllers
-which offer enterprise level functionalities but
-not all high performace optimiziations like caching.
-Last in line are P-Class physical controllers
-which offer typical performance oriented functionalities and optimizations
-like chaching and different types of interfaces.
-For the exact feature matrix consult the documentation found online. \cite{hpe:sa-userguide}
+The Smart Array Controllers are categorized into three main classes: S, E, and P.
+S-Class serves as an entry-level product, offering a typical software RAID solution tailored for MS Windows environments.
+E-Class controllers provide enterprise-level functionalities, although they may lack some high-performance optimizations like caching.
+P-Class controllers are designed for performance optimization, 
+offering typical performance-oriented functionalities along with optimizations such as caching and support for various interfaces.
+For detailed information regarding the feature matrix, it's advisable to consult the documentation available online. \cite{hpe:sa-userguide}
 \\ \\
-Performance whise HP suggests to consider, 
-that the performance decreases as fault tolerance improves due to extra I/O as well as that
-read performance is generally the same for all RAID levels except for smaller RAID 5 or 6 arrays. \cite{hpe:sa-userguide}
+In terms of performance, HP suggests considering that as fault tolerance improves, performance may decrease due to additional I/O overhead.
+Additionally, HP notes that read performance is generally consistent across all RAID levels, except for smaller RAID 5 or 6 arrays. \cite{hpe:sa-userguide}
 \\ \\
-In their documentations they almost show the same
-theoretical numbers to create a performance comparison.
-They simplify their model on the basis of needed write io operations.
+In their documentation, HP nearly presents identical theoretical numbers to facilitate a performance comparison.
+They simplify their model based on the required number of write I/O operations.
 \begin{itemize}
     \item RAID-0, 1x Steps IO 
     \item RAID-1/10, 2x Steps IO
@@ -208,12 +201,12 @@ They simplify their model on the basis of needed write io operations.
     \item RAID-5, 4x Steps IO
     \item RAID-6, 6x Steps IO
 \end{itemize}
-This has evidently a big enough similiarity to the model used in chapter "Performance".
+This clearly demonstrates a significant similarity to the model utilized in the "Performance" chapter.
 \\ \\
-For the capacity aspects, they suggest to consider, that usable capacity decreases as 
-fault tolerance improves due to an increase in parity data.
-Further they say, that the usable capacity for RAID 10 and RAID 10 Triple remains flat with larger arrays and
-that the usable capacity for RAID 5, 50, 6, and 60 increases with larger arrays. \cite{hpe:sa-userguide}
+In terms of capacity considerations, HP advises taking into account that usable capacity diminishes
+as fault tolerance improves, primarily due to the increase in parity data.
+Moreover, they indicate that the usable capacity for RAID 10 and RAID 10 Triple remains consistent with larger arrays,
+while for RAID 5, 50, 6, and 60, it tends to increase with larger arrays. \cite{hpe:sa-userguide}
 \\ \\
 \begin{figure}
     \label{fig:hp-storage-efficiency}
@@ -232,7 +225,6 @@ At last consider following suggestions by HP:
 \end{itemize}
 
 \section*{Fun Facts}
-
 It seems that RAID initially stood for "Redundant Array of Inexpensive Disks"
 before evolving into the more widely recognized version, "Redundant Array of Independent Disks."
 Source is: trust me brother; cannot be bothered to look it up.
