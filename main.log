@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  1 APR 2024 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  1 APR 2024 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -138,77 +138,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--33
  []
 
 [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []|\OT1/cmr/m/n/10 Small
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []|\OT1/cmr/m/n/10 Small
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []|\OT1/cmr/m/n/10 Large
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []|\OT1/cmr/m/n/10 Large
  []
 
 
-Overfull \hbox (0.8403pt too wide) in paragraph at lines 113--113
+Overfull \hbox (0.8403pt too wide) in paragraph at lines 118--118
 []|$[] []$| 
  []
 
 
-Overfull \hbox (0.8403pt too wide) in paragraph at lines 113--113
+Overfull \hbox (0.8403pt too wide) in paragraph at lines 118--118
 []|$[] []$| 
  []
 
 <img/cost-troughput-comparison.png, id=23, 526.96875pt x 512.41437pt>
 File: img/cost-troughput-comparison.png Graphic file (type png)
 <use img/cost-troughput-comparison.png>
-Package pdftex.def Info: img/cost-troughput-comparison.png  used on input line 120.
+Package pdftex.def Info: img/cost-troughput-comparison.png  used on input line 124.
 (pdftex.def)             Requested size: 345.0pt x 335.48923pt.
 [5] [6 <./img/cost-troughput-comparison.png>] [7]
-Overfull \hbox (11.38965pt too wide) in paragraph at lines 176--180
+Overfull \hbox (11.38965pt too wide) in paragraph at lines 181--185
 \OT1/cmr/m/n/10 For a quick com-par-i-son, uti-lize the Mi-crosoft Ex-cel work-book "raid-workbook.xlsx"
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--197
+Underfull \hbox (badness 10000) in paragraph at lines 186--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--197
+Underfull \hbox (badness 10000) in paragraph at lines 186--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--197
+Underfull \hbox (badness 10000) in paragraph at lines 186--202
 
  []
 
 <img/hp-storage-efficiency.png, id=38, 343.2825pt x 238.491pt>
 File: img/hp-storage-efficiency.png Graphic file (type png)
 <use img/hp-storage-efficiency.png>
-Package pdftex.def Info: img/hp-storage-efficiency.png  used on input line 213.
+Package pdftex.def Info: img/hp-storage-efficiency.png  used on input line 217.
 (pdftex.def)             Requested size: 345.0pt x 239.684pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--220
+Underfull \hbox (badness 10000) in paragraph at lines 209--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--220
+Underfull \hbox (badness 10000) in paragraph at lines 209--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--220
+Underfull \hbox (badness 10000) in paragraph at lines 209--225
 
  []
 
@@ -224,7 +224,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--220
 <img/raid-overview.png, id=47, 351.3125pt x 479.7925pt>
 File: img/raid-overview.png Graphic file (type png)
 <use img/raid-overview.png>
-Package pdftex.def Info: img/raid-overview.png  used on input line 237.
+Package pdftex.def Info: img/raid-overview.png  used on input line 241.
 (pdftex.def)             Requested size: 345.0pt x 471.21104pt.
 
 
@@ -245,7 +245,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,14n,65p,713b,267s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\mrcls\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mrcls/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (11 pages, 458503 bytes).
+Output written on main.pdf (11 pages, 458504 bytes).
 PDF statistics:
  105 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

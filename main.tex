@@ -48,7 +48,12 @@ in eqation \ref{eq:r6-mttf}. \cite{cmu:raidhighperf}
     {MTTF^3(disk)}
     {N*(G-1)*(G-2)*MTTR^2(disk)}
 \end{equation}
-An overview of the hardware failures that can occur without disrupting service is presented in Table \ref{tab:reliability}. It's worth noting that in RAID-1, the impact of a failure largely depends on luck regarding the location of the failure. If the stripes are favorably replicated, multiple drives may be able to fail without service disruption. \cite{uw:raid} 
+An overview of the hardware failures that can occur without disrupting service 
+is presented in Table \ref{tab:reliability}.
+It's worth noting that in RAID-1, the impact of a failure largely
+depends on luck regarding the location of the failure.
+If the stripes are favorably replicated, multiple drives
+may be able to fail without service disruption. \cite{uw:raid} 
 \begin{table}[h]
     \begin{tabularx}{\textwidth}{l|X|X|X|X|X|X}
         \textbf{Level} &
@@ -116,9 +121,9 @@ plots this against arrays of different sizes. \cite{cmu:raidhighperf}
 \end{table}
 \pagebreak
 \begin{figure}[h]
-    \label{fig:costthroughput}
     \includegraphics[width=\textwidth]{cost-troughput-comparison}
     \caption{Cost Throughput Comparison}
+    \label{fig:costthroughput}
 \end{figure}
 \pagebreak
 \section{Performance}
@@ -209,9 +214,9 @@ Moreover, they indicate that the usable capacity for RAID 10 and RAID 10 Triple 
 while for RAID 5, 50, 6, and 60, it tends to increase with larger arrays. \cite{hpe:sa-userguide}
 \\ \\
 \begin{figure}
-    \label{fig:hp-storage-efficiency}
     \includegraphics[width=\textwidth]{hp-storage-efficiency}
     \caption{HP Storage Efficiency \cite{hpe:sa-userguide}}
+    \label{fig:hp-storage-efficiency}
 \end{figure}
 Figure \ref{fig:hp-storage-efficiency} shows a general plot of the storage efficiency development
 over a increasing amount of disks. The plot assumes the group size 2 for RAID-50 and RAID-60. \cite{hpe:sa-userguide}
@@ -233,8 +238,8 @@ Source is: trust me brother; cannot be bothered to look it up.
 \bibliographystyle{ieeetr}
 \bibliography{refs}
 \begin{figure}[h]
-    \label{fig:raid-overview}
     \includegraphics[width=\textwidth]{raid-overview}
     \caption{Raid Overview \cite{cmu:raidhighperf}}
+    \label{fig:raid-overview}
 \end{figure}
 \end{document}
